@@ -90,7 +90,7 @@ cd /ql/data/repo/yuxian158_check && python3 utils.py
 
 ### 3.说明
 
-1.本仓库在12.21日的更新中同时支持了json和toml两种格式的配置文件，但是推荐使用toml格式配置文件
+1. 支持json和toml两种格式的配置文件，但是推荐使用toml格式配置文件
 
 2.当toml和json配置文件共存时优先使用toml文件
 
@@ -153,21 +153,6 @@ json配置方式
 export MI_PUSH_ALIAS="********"
 ```
 
-## 其他
-
-#### 1.关于 toml 的语法参考：
-
-* [toml-lang/toml](https://github.com/toml-lang/toml)
-* [中文知乎介绍](https://zhuanlan.zhihu.com/p/50412485)
-* [TOML 教程中文版](https://toml.io/cn/v1.0.0)
-
-#### 2.排错指引
-
-1.在sitoi/dailycheckin的某次更新中修改了键名，请尽量删除原配置文件后重新配置
-
-2.本库找配置文件时使用了正则表达式,在最外层配置时可以不区分大小写，且只要包含字段就可以，甚至可以写中文(强烈不建议这么写,貌似toml不支持)
-
-3.很多脚本并没有测试
 
 ## 致谢
 
